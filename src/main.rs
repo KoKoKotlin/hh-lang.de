@@ -26,7 +26,7 @@ async fn main() {
     #[cfg(not(debug_assertions))]
     warp::serve(routes)
         .tls()
-        .cert_path("/etc/letsencrypt/live/xn--herrhll-e1a.de/fullchain.pem")
-        .key_path("/etc/letsencrypt/live/xn--herrhll-e1a.de/privkey.pem")
+        .cert_path("/etc/letsencrypt/live/hh-lang.de/fullchain.pem")
+        .key_path("/etc/letsencrypt/live/hh-lang.de/privkey.pem")
         .run(([0, 0, 0, 0], 443)).await;
 }
